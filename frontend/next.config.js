@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export', // Fixes next export issue
+    output: 'export',
     images: {
-      unoptimized: true, // Required if using images in export mode
+      unoptimized: true, // Required for Netlify hosting
     },
-    reactStrictMode: true,
   };
   
   module.exports = nextConfig;
